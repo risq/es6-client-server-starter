@@ -2,6 +2,7 @@
 .sass-cache
 
 /www
+/public
 /sourcemaps
 /vendor/js/libs.js
 /vendor/js/libs.js.map
@@ -15,4 +16,4 @@ Desktop.ini
 npm-debug.log
 coverage
 
-src/**/*.css
+db/db.json

@@ -1,5 +1,5 @@
-var dest = 'www';
-var src = 'src';
+var dest = 'public';
+var src = 'client';
 var maps = 'maps';
 
 module.exports = {
@@ -19,6 +19,9 @@ module.exports = {
     server: {
       // Serve up our build folder
       baseDir: dest,
+      middleware: function(req, res, next) {
+        require('./../app')(req, res, next);
+      },
     },
     watchOptions: {
       ignoreInitial: true,
